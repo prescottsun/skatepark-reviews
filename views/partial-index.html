@@ -1,0 +1,11 @@
+<section class='section'>
+    <ul>
+        ${parkData.map(park => `
+            <li>
+                <a href='./${park.id}'>
+                ${park.name}: ${park.address} ${park.street}, ${park.city}, ${park.state}
+            </a></li>
+            <img src='${park.picture}' alt= 'picture of ${park.name}'>
+        `).join('')}
+    </ul>
+</section>
